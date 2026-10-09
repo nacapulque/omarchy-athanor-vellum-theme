@@ -1,59 +1,93 @@
 # Athanor Vellum
 
-An [Omarchy](https://omarchy.org) theme based on
-[**Athanor**](https://github.com/script-wizards/athanor) by Script Wizards, an
+Iron-gall ink on parchment. A light [Omarchy](https://omarchy.org) theme based on
+[Athanor](https://github.com/script-wizards/athanor) by Script Wizards, an
 alchemical layer for Arch and Hyprland.
 
-Iron-gall ink on parchment. A light theme built from Athanor's **Vellum** palette. In Athanor
-the four color schemes are stages of the Magnum Opus, and Vellum is
-*albedo*, the whitening.
+Athanor's four color schemes are the stages of the Magnum Opus. Vellum is
+*albedo*, the whitening. Its companion is
+[Athanor Umber](https://github.com/nacapulque/omarchy-athanor-umber-theme)
+(*nigredo*).
 
-![Athanor Vellum](preview.png)
+![Athanor Vellum desktop with btop, Neovim and fastfetch](preview.png)
 
 ## Install
 
 ```sh
 omarchy theme install https://github.com/nacapulque/omarchy-athanor-vellum-theme
+omarchy theme set athanor-vellum
 ```
 
-Cycle through the eight Doré plates and the logo wallpaper with `omarchy theme bg next`.
-
-Companion theme: [Athanor Umber](https://github.com/nacapulque/omarchy-athanor-umber-theme).
+`omarchy theme bg next` cycles the wallpapers, and `omarchy theme update`
+pulls new versions of the theme.
 
 ## What's in it
 
-- `colors.toml`: Athanor's Vellum palette and its 16 ANSI colors, mapped onto
-  Omarchy's color names. Omarchy builds the terminal, Hyprland, Neovim, btop,
-  VS Code and other configs from it.
-- `shell.bar.toml`: the status bar in Athanor's own bar colors.
-- `backgrounds/`: Gustave Doré's wood engravings, dithered to two tones with
-  Floyd-Steinberg in the palette's ground and ink colors. They're 3840×2160,
-  drawn on a 960×540 grid and pixel quadrupled, so the dither stays crisp on 4K
-  and scales down cleanly to 1080p. There's also the usual Omarchy logo
-  wallpaper in the palette's accent.
+| File | What it does |
+|---|---|
+| `colors.toml` | The palette. Omarchy generates the terminal, Hyprland, Neovim, btop, Helix, VS Code and shell colors from it. |
+| `shell.bar.toml` | The status bar in Athanor's own bar colors. |
+| `backgrounds/` | Eight Doré plates plus the Omarchy logo wallpaper. |
+| `icons.theme` | `Yaru-wartybrown` icons. |
+| `preview.png`, `preview-unlock.png`, `unlock.png` | Theme switcher previews and the boot-unlock logo. |
 
-Body text has at least 12:1 contrast against the background. The ANSI colors
-keep Athanor's hues, with only their lightness nudged so each one has at least
-5:1 on the background, 4.5:1 on raised surfaces (editor cursorlines, herdr and
-Helix panels) and 3:1 inside a selection.
+### Palette
+
+| Role | Color |
+|---|---|
+| Background | `#ece1c6` |
+| Foreground | `#1f1914` |
+| Accent | `#7c5510` |
+| Selection | `#c2b492` |
+| Muted | `#635441` |
+
+ANSI red, green, yellow, blue, magenta and cyan: `#993421` `#525b20` `#764f06` `#3f5570` `#7a3f4c` `#375f49`.
+
+The palette is Athanor's Vellum. The ANSI colors keep Athanor's hues,
+with only their lightness nudged so terminal text holds up on every surface it
+sits on:
+
+- at least 5:1 on the background
+- at least 4.5:1 on raised surfaces, such as editor cursorlines and herdr or
+  Helix panels
+- at least 3:1 inside a selection
+
+Body text is above 12:1.
+
+### Wallpapers
+
+The wallpapers are Gustave Doré's wood engravings, dithered to two tones with
+Floyd-Steinberg in the palette's ground and ink colors, as Athanor makes them.
+They're 3840×2160, drawn on a 960×540 grid and pixel quadrupled, so the
+dither stays crisp on 4K and scales down evenly to 1080p.
 
 ## What's not in it
 
-This is only Athanor's look. The roguelike status line, planetary hours, tarot
-draws, lockscreen sigils, a plate per workspace, the bitmap fonts and the notch
-plugin all belong to [Athanor itself](https://github.com/script-wizards/athanor),
-so install it if you want the whole furnace.
+This theme only carries Athanor's look. The roguelike status line, planetary
+hours, tarot draws, lockscreen sigils, a plate per workspace, the bitmap fonts
+and the notch plugin belong to
+[Athanor itself](https://github.com/script-wizards/athanor). Install it for the
+whole furnace.
 
 ## Credits
 
-- Palette, dither recipe and the idea: [Athanor](https://github.com/script-wizards/athanor),
-  MIT, © 2026 Script Wizards. This theme isn't affiliated with or endorsed by them.
-- Plates by Gustave Doré, public domain, from Wikimedia Commons:
-- *Merlin leads the king out of the ruins* (Idylls of the King, 1868): <https://commons.wikimedia.org/wiki/File:Idylls_of_the_King_1.jpg>
-- *Merlin shows the book* (Idylls of the King, 1868): <https://commons.wikimedia.org/wiki/File:Idylls_of_the_King_15.jpg>
-- *Merlin and Vivien under the oak* (Idylls of the King, 1868): <https://commons.wikimedia.org/wiki/File:Idylls_of_the_King_10.jpg>
-- *The old man in the grotto* (Idylls of the King, 1868): <https://commons.wikimedia.org/wiki/File:Idylls_of_the_King_17.jpg>
-- *Hooded figures in the black forest* (Orlando Furioso, 1879): <https://commons.wikimedia.org/wiki/File:Orlando_Furioso_31.jpg>
-- *The lamp-lit hall* (Orlando Furioso, 1879): <https://commons.wikimedia.org/wiki/File:Orlando_Furioso_6.jpg>
-- *The graveyard under the moon* (The Raven, 1884): <https://commons.wikimedia.org/wiki/File:Dore_The_Raven_1884-15.jpg>
-- *Satan's despair* (Paradise Lost, 1866): <https://commons.wikimedia.org/wiki/File:Gustave_Dore_Satan%27s_Despair.jpg>
+The palette, the dither recipe and the idea come from
+[Athanor](https://github.com/script-wizards/athanor), MIT, © 2026 Script Wizards.
+This theme isn't affiliated with or endorsed by them.
+
+The plates are public domain, from Wikimedia Commons:
+
+| # | Plate | From |
+|---|---|---|
+| 1 | [*Merlin leads the king out of the ruins*](https://commons.wikimedia.org/wiki/File:Idylls_of_the_King_1.jpg) | Idylls of the King, 1868 |
+| 2 | [*Merlin shows the book*](https://commons.wikimedia.org/wiki/File:Idylls_of_the_King_15.jpg) | Idylls of the King, 1868 |
+| 3 | [*Merlin and Vivien under the oak*](https://commons.wikimedia.org/wiki/File:Idylls_of_the_King_10.jpg) | Idylls of the King, 1868 |
+| 4 | [*The old man in the grotto*](https://commons.wikimedia.org/wiki/File:Idylls_of_the_King_17.jpg) | Idylls of the King, 1868 |
+| 5 | [*Hooded figures in the black forest*](https://commons.wikimedia.org/wiki/File:Orlando_Furioso_31.jpg) | Orlando Furioso, 1879 |
+| 6 | [*The lamp-lit hall*](https://commons.wikimedia.org/wiki/File:Orlando_Furioso_6.jpg) | Orlando Furioso, 1879 |
+| 7 | [*The graveyard under the moon*](https://commons.wikimedia.org/wiki/File:Dore_The_Raven_1884-15.jpg) | The Raven, 1884 |
+| 8 | [*Satan's despair*](https://commons.wikimedia.org/wiki/File:Gustave_Dore_Satan%27s_Despair.jpg) | Paradise Lost, 1866 |
+
+## License
+
+MIT. See [LICENSE](LICENSE).
