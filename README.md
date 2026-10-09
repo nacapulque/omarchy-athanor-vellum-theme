@@ -32,8 +32,10 @@ Companion theme: [Athanor Umber](https://github.com/nacapulque/omarchy-athanor-u
   and scales down cleanly to 1080p. There's also the usual Omarchy logo
   wallpaper in the palette's accent.
 
-Body text has at least 12:1 contrast against the background, and every accent
-and ANSI color has at least 4.5:1, so the original's contrast targets hold.
+Body text has at least 12:1 contrast against the background. The ANSI colors
+keep Athanor's hues, with only their lightness nudged so each one has at least
+5:1 on the background, 4.5:1 on raised surfaces (editor cursorlines, herdr and
+Helix panels) and 3:1 inside a selection.
 
 ## What's not in it
 
