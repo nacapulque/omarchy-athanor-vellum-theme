@@ -16,7 +16,7 @@ the four color schemes are stages of the Magnum Opus, and Vellum is
 omarchy theme install https://github.com/nacapulque/omarchy-athanor-vellum-theme
 ```
 
-Cycle through the eight Doré plates with `omarchy theme bg next`.
+Cycle through the eight Doré plates and the logo wallpaper with `omarchy theme bg next`.
 
 Companion theme: [Athanor Umber](https://github.com/nacapulque/omarchy-athanor-umber-theme).
 
@@ -27,8 +27,10 @@ Companion theme: [Athanor Umber](https://github.com/nacapulque/omarchy-athanor-u
   VS Code and other configs from it.
 - `shell.bar.toml`: the status bar in Athanor's own bar colors.
 - `backgrounds/`: Gustave Doré's wood engravings, dithered to two tones with
-  Floyd-Steinberg in the palette's ground and ink colors. They're rendered at
-  half of 1920×1080 and pixel doubled, as Athanor does it.
+  Floyd-Steinberg in the palette's ground and ink colors. They're 3840×2160,
+  drawn on a 960×540 grid and pixel quadrupled, so the dither stays crisp on 4K
+  and scales down cleanly to 1080p. There's also the usual Omarchy logo
+  wallpaper in the palette's accent.
 
 Body text has at least 12:1 contrast against the background, and every accent
 and ANSI color has at least 4.5:1, so the original's contrast targets hold.
