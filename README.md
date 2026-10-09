@@ -27,6 +27,7 @@ pulls new versions of the theme.
 |---|---|
 | `colors.toml` | The palette. Omarchy generates the terminal, Hyprland, Neovim, btop, Helix, VS Code and shell colors from it. |
 | `shell.bar.toml` | The status bar in Athanor's own bar colors. |
+| `shell.*.toml` | The rest of the Omarchy shell in Athanor's style. See [Shell](#shell). |
 | `backgrounds/` | Eight Doré plates plus the Omarchy logo wallpaper. |
 | `icons.theme` | `Yaru-wartybrown` icons. |
 | `preview.png`, `preview-unlock.png`, `unlock.png` | Theme switcher previews and the boot-unlock logo. |
@@ -53,6 +54,22 @@ sits on:
 - at least 3:1 inside a selection
 
 Body text is above 12:1.
+
+### Shell
+
+The Omarchy shell follows Athanor's own UI: flat, opaque cards with a 2px
+accent rule, and the selected row drawn in inverse, like Athanor's quit prompt
+and its `--More--` line.
+
+- **Menu and launcher:** opaque card, accent border, inverse selection.
+- **Notifications and popups:** opaque, accent border and countdown.
+- **Lock screen and password prompts:** an opaque card ruled in the accent,
+  red on a wrong password.
+- **Tooltips:** in the status bar's colors.
+- **Controls:** keyboard focus gets the accent outline.
+
+These style Omarchy's built-in shell plugins. A replacement notification or
+lock plugin draws itself and may ignore them.
 
 ### Wallpapers
 

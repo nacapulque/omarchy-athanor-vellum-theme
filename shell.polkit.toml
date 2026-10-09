@@ -1,0 +1,12 @@
+[polkit]
+background       = "#ece1c6"
+background-alpha = 1.0
+text             = "#1f1914"
+text-error       = "#993421"
+border           = "#7c5510"
+border-error     = "#993421"
+border-alpha     = 1.0
+border-width     = 2
+scrim            = "#ece1c6"
+scrim-alpha      = 0.75
+accent           = "#7c5510"
